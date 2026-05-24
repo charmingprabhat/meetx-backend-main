@@ -9,9 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-
-@CrossOrigin("*")
-
+@CrossOrigin(origins = "https://meetx-frontend-alpha.vercel.app")
 public class UsersController {
 
     @Autowired
