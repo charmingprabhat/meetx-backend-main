@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17
+FROM eclipse-temurin:21
 
 WORKDIR /app
 
@@ -12,4 +12,4 @@ EXPOSE 8080
 
 ENV PORT=8080
 
-CMD java -jar target/*.jar
+CMD ["sh", "-c", "java -jar target/*.jar"]
